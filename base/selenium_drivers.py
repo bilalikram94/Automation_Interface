@@ -137,13 +137,13 @@ class SeleniumDriver:
             self.log.info("Element not found")
             return False
 
-    def waitForElement(self, locator, locatorType="id", timeout=10, pollFrequency=0.5):
+    def waitForElement(self, locator, locatorType="id", timeout="5", pollFrequency=0.5):
         element = None
         try:
             byType = self.getByType(locatorType)
             self.log.info("Waiting for maximum :: " + str(timeout) +
                           " :: seconds for element to be clickable")
-            wait = WebDriverWait(self.driver, 10, poll_frequency=1,
+            wait = WebDriverWait(self.driver, timeout, poll_frequency=1,
                                  ignored_exceptions=[NoSuchElementException,
                                                      ElementNotVisibleException,
                                                      ElementNotSelectableException])
@@ -353,3 +353,10 @@ class SeleniumDriver:
             self.log.error("### Can NOT find Element with locator: " + locator + "locatorType: " + locatorType)
             self.log.error("### Can't select value: " + val)
             return False
+
+    def driverWaitImplicitly(self, waitAfterCommand):
+        try:
+            self.driver.implicitlyWait(waitAfterCommand)
+            self.log.info("Driver waited for:" + waitAfterCommand)
+        except:
+            self.log.error("Could not wait for" + waitAfterCommand)

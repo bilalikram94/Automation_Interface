@@ -17,6 +17,10 @@ from utilities.teststatus import Status
 
 
 class BasePage(SeleniumDriver):
+    driver = None
+    util = None
+    stat = None
+
     def __init__(self, driver):
         """
         Inits BasePage class

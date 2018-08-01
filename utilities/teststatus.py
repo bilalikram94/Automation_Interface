@@ -20,7 +20,10 @@ class Status(SeleniumDriver):
         """
         Inits CheckPoint class
         """
-        super(Status, self).__init__(driver)
+        try:
+            super().__init__(driver)
+        except:
+            SeleniumDriver.__init__(self, driver)
         self.resultList = []
 
     def setResult(self, result, resultMessage):
