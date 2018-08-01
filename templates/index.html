@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en"																																																																																																																																																																																																																																																																																																																																																																																																																																																	>
+    <head>
+
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <link rel="icon" href="">
+        <title>Cubix Automation</title>
+		<link rel="stylesheet" href="/static/css/bootstrap.min.css">
+        <!-- Custom CSS -->
+		<link rel="stylesheet" href="/static/css/custom.css">
+		<!-- Font Awesome -->
+		<link rel="stylesheet" href="/static/css/font-awesome.min.css">
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+		<link rel="stylesheet" href="/static/css/ie10-viewport-bug-workaround.css">
+		<!-- App.min 1 -->
+		<link rel="stylesheet" href="/static/css/app.min.1.css">
+		<style>
+        </style>
+    </head>
+
+	<body>
+    <div class="container">
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                    <form method=post enctype=multipart/form-data action="automation">
+                                <p>Enter Page Url to Test <input type="text", name="url"></p>
+                             {% for out in item %}
+                            <p>Locator<input type="text" name="locators{{out}}">&nbsp;&nbsp;&nbsp;Locator Type
+                                <select name='LocatorType{{out}}'>
+                                    <option value='id' >id</option>
+                                    <option value='xpath'>xPtah</option>
+                                    <option value='css'>CSS</option>
+                                    <option value='link'>Link Text</option>
+                                    <option value='class'>Class Name</option>
+                                </select>
+                            Actions
+                                <select name='Actions{{out}}'>
+                                    <option value='getTitle' >getTitle</option>
+                                    <option value='login'>Login</option>
+                                    <option value='getElementsList'>getElementsList</option>
+                                    <option value='sendKeys'>sendKeys</option>
+                                    <option value='clearField'>clearField</option>
+                                    <option value='elementClick'>elementClick</option>
+                                    <option value='isElementPresent'>isElementPresent</option>
+                                    <option value='elementPresenceCheck'>elementPresenceCheck</option>
+                                    <option value='waitForElement'>waitForElement</option>
+                                    <option value='isElementDisplayed'>isElementDisplayed</option>
+                                    <option value='webScroll'>webScroll</option>
+                                    <option value='mouseHover'>mouseHover</option>
+                                    <option value='mouseClick'>mouseClick</option>
+                                    <option value='scrollIntoView'>scrollIntoView</option>
+                                    <option value='dragDrop'>dragDrop</option>
+                                    <option value='windowSize'>windowSize</option>
+                                    <option value='dropDownList'>dropDownList</option>
+                                </select>
+                            Data <input type=text name='data{{out}}'>
+                            {% endfor %}
+                                <p align="center"><input type=submit value="Automate">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<!-- Bootstrap & JavaScript -->
+	<!-- Placed at the end of the document so the pages load faster -->
+
+	<script src = "/static/js/jquery.min.js"></script>
+
+	<script src = "/static/js/bootstrap.min.js"></script>
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+	<script src = "/static/js/ie10-viewport-bug-workaround.js"></script>
+
+
+	<script src = "/static/js/jquery.flot.js"></script>
+
+
+	<script src = "/static/js/jquery.flot.resize.js"></script>
+
+	<script src = "/static/js/jquery.flot.orderBars.js"></script>
+	<!-- Charts - Please read the read-me.txt inside the js folder-->
+
+	<script src = "/static/js/bar-chart.js"></script>
+
+	<script src = "/static/js/dynamic-chart.js"></script>
+
+	</body>
+</html>

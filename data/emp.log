@@ -1,0 +1,322 @@
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 15:28:04] "GET /automate HTTP/1.1" 200 -
+INFO:root:Error Occured When getting json :Install xlrd >= 0.9.0 for Excel support
+INFO:root:************************************************
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 15:28:13] "POST /automate HTTP/1.1" 400 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 15:28:53] "GET /automate HTTP/1.1" 200 -
+INFO:LoginPage:Element found with locator: el1 and  locatorType: id
+INFO:LoginPage:Sent data on element with locator: el1 locatorType: id
+INFO:LoginPage:Element found with locator: el4 and  locatorType: id
+INFO:LoginPage:Sent data on element with locator: el4 locatorType: id
+INFO:LoginPage:Element found with locator: [type="submit"] and  locatorType: css
+INFO:LoginPage:Clicked on element with locator: [type="submit"]and locatorType: css
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 15:29:25] "POST /automate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 15:59:34] "GET / HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 15:59:40] "GET /automate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 15:59:43] "POST /automate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 15:59:43] "GET /static/css/bootstrap.min.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 15:59:43] "GET /static/css/custom.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 15:59:43] "GET /static/css/font-awesome.min.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 15:59:43] "GET /static/css/ie10-viewport-bug-workaround.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 15:59:43] "GET /static/css/app.min.1.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 15:59:43] "GET /static/js/jquery.min.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 15:59:43] "GET /static/js/bootstrap.min.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 15:59:43] "GET /static/js/ie10-viewport-bug-workaround.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 15:59:43] "GET /static/js/jquery.flot.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 15:59:43] "GET /static/js/jquery.flot.resize.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 15:59:43] "GET /static/js/jquery.flot.orderBars.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 15:59:43] "GET /static/js/bar-chart.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 15:59:43] "GET /static/js/dynamic-chart.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 15:59:43] "GET /static/js/jquery.min.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 15:59:43] "GET /static/js/bootstrap.min.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 15:59:43] "GET /static/js/ie10-viewport-bug-workaround.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 15:59:43] "GET /static/js/jquery.flot.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 15:59:43] "GET /static/js/jquery.flot.resize.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 15:59:43] "GET /static/js/jquery.flot.orderBars.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 15:59:43] "GET /static/js/bar-chart.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 15:59:43] "GET /static/js/dynamic-chart.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 16:18:17] "GET /automate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 16:18:41] "POST /automate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 16:18:41] "GET /static/css/bootstrap.min.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 16:18:41] "GET /static/css/custom.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 16:18:41] "GET /static/css/font-awesome.min.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 16:18:41] "GET /static/css/ie10-viewport-bug-workaround.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 16:18:41] "GET /static/css/app.min.1.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 16:18:41] "GET /static/js/jquery.min.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 16:18:41] "GET /static/js/bootstrap.min.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 16:18:41] "GET /static/js/ie10-viewport-bug-workaround.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 16:18:41] "GET /static/js/jquery.flot.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 16:18:41] "GET /static/js/jquery.flot.resize.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 16:18:41] "GET /static/js/jquery.flot.orderBars.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 16:18:41] "GET /static/js/bar-chart.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 16:18:41] "GET /static/js/dynamic-chart.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 16:18:41] "GET /static/js/jquery.min.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 16:18:41] "GET /static/js/bootstrap.min.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 16:18:41] "GET /static/js/ie10-viewport-bug-workaround.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 16:18:41] "GET /static/js/jquery.flot.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 16:18:41] "GET /static/js/jquery.flot.resize.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 16:18:41] "GET /static/js/jquery.flot.orderBars.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 16:18:41] "GET /static/js/bar-chart.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 16:18:41] "GET /static/js/dynamic-chart.js HTTP/1.1" 404 -
+INFO:LoginPage:Element found with locator: el1 and  locatorType: id
+INFO:LoginPage:Sent data on element with locator: el1 locatorType: id
+INFO:LoginPage:Element found with locator: el4 and  locatorType: id
+INFO:LoginPage:Sent data on element with locator: el4 locatorType: id
+INFO:LoginPage:Element found with locator: [type="submit"] and  locatorType: css
+INFO:LoginPage:Clicked on element with locator: [type="submit"]and locatorType: CSS
+INFO:LoginPage:Waiting for maximum :: 10 :: seconds for element to be clickable
+INFO:LoginPage:Element not appeared on the web page.user-display-avatar
+INFO:LoginPage:Element found with locator: .user-image and  locatorType: css
+INFO:LoginPage:Clicked on element with locator: .user-imageand locatorType: CSS
+INFO:LoginPage:Locator type link_text not correct/supported
+INFO:LoginPage:Element not found with locator: Logout and  locatorType: link_text
+ERROR:LoginPage:Cannot click on the element with locator: Logout locatorType: Link_Text
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 16:21:47] "POST /automation HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 16:24:00] "GET /automate HTTP/1.1" 200 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:26:24] "GET /automate HTTP/1.1" 200 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:26:25] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:26:30] "POST /automate HTTP/1.1" 200 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:26:30] "GET /static/css/bootstrap.min.css HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:26:30] "GET /static/css/font-awesome.min.css HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:26:30] "GET /static/css/custom.css HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:26:30] "GET /static/css/ie10-viewport-bug-workaround.css HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:26:30] "GET /static/css/app.min.1.css HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:26:30] "GET /static/js/jquery.min.js HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:26:30] "GET /static/js/bootstrap.min.js HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:26:30] "GET /static/js/jquery.flot.js HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:26:30] "GET /static/js/ie10-viewport-bug-workaround.js HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:26:30] "GET /static/js/jquery.flot.orderBars.js HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:26:30] "GET /static/js/jquery.flot.resize.js HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:26:30] "GET /static/js/bar-chart.js HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:26:30] "GET /static/js/dynamic-chart.js HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:26:30] "GET /static/js/jquery.min.js HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:26:30] "GET /static/js/bootstrap.min.js HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:26:30] "GET /static/js/ie10-viewport-bug-workaround.js HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:26:30] "GET /static/js/jquery.flot.js HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:26:30] "GET /static/js/jquery.flot.resize.js HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:26:30] "GET /static/js/jquery.flot.orderBars.js HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:26:30] "GET /static/js/bar-chart.js HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:26:30] "GET /static/js/dynamic-chart.js HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:29:19] "GET /automate HTTP/1.1" 200 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:29:32] "POST /automate HTTP/1.1" 200 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:29:32] "GET /static/css/bootstrap.min.css HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:29:32] "GET /static/css/custom.css HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:29:32] "GET /static/css/app.min.1.css HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:29:32] "GET /static/css/ie10-viewport-bug-workaround.css HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:29:32] "GET /static/css/font-awesome.min.css HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:29:32] "GET /static/js/jquery.min.js HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:29:32] "GET /static/js/bootstrap.min.js HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:29:32] "GET /static/js/ie10-viewport-bug-workaround.js HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:29:32] "GET /static/js/jquery.flot.js HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:29:32] "GET /static/js/jquery.flot.resize.js HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:29:32] "GET /static/js/bar-chart.js HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:29:32] "GET /static/js/dynamic-chart.js HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:29:32] "GET /static/js/jquery.flot.orderBars.js HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:29:32] "GET /static/js/jquery.min.js HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:29:32] "GET /static/js/bootstrap.min.js HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:29:32] "GET /static/js/ie10-viewport-bug-workaround.js HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:29:32] "GET /static/js/jquery.flot.js HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:29:32] "GET /static/js/jquery.flot.resize.js HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:29:32] "GET /static/js/jquery.flot.orderBars.js HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:29:32] "GET /static/js/bar-chart.js HTTP/1.1" 404 -
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:29:32] "GET /static/js/dynamic-chart.js HTTP/1.1" 404 -
+INFO:LoginPage:Element found with locator: el1 and  locatorType: id
+INFO:LoginPage:Clicked on element with locator: el1and locatorType: id
+INFO:werkzeug:192.168.7.66 - - [31/Jul/2018 16:29:59] "POST /automation HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:05:31] "GET /automate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:05:43] "POST /automate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:05:43] "GET /static/css/bootstrap.min.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:05:43] "GET /static/css/custom.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:05:43] "GET /static/css/font-awesome.min.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:05:43] "GET /static/css/ie10-viewport-bug-workaround.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:05:43] "GET /static/css/app.min.1.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:05:43] "GET /static/js/jquery.min.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:05:43] "GET /static/js/bootstrap.min.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:05:43] "GET /static/js/ie10-viewport-bug-workaround.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:05:43] "GET /static/js/jquery.flot.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:05:43] "GET /static/js/jquery.flot.resize.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:05:43] "GET /static/js/jquery.flot.orderBars.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:05:43] "GET /static/js/bar-chart.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:05:43] "GET /static/js/dynamic-chart.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:05:43] "GET /static/js/jquery.min.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:05:43] "GET /static/js/bootstrap.min.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:05:43] "GET /static/js/ie10-viewport-bug-workaround.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:05:43] "GET /static/js/jquery.flot.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:05:44] "GET /static/js/jquery.flot.resize.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:05:44] "GET /static/js/jquery.flot.orderBars.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:05:44] "GET /static/js/bar-chart.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:05:44] "GET /static/js/dynamic-chart.js HTTP/1.1" 404 -
+INFO:LoginPage:Element found with locator: el1 and  locatorType: id
+INFO:LoginPage:Sent data on element with locator: el1 locatorType: id
+INFO:LoginPage:Element found with locator: el4 and  locatorType: id
+INFO:LoginPage:Sent data on element with locator: el4 locatorType: id
+INFO:LoginPage:Element found with locator: [type="submit"] and  locatorType: css
+INFO:LoginPage:Clicked on element with locator: [type="submit"]and locatorType: css
+INFO:LoginPage:Waiting for maximum :: 10 :: seconds for element to be clickable
+INFO:LoginPage:Element not appeared on the web page.user-display-avatar
+INFO:LoginPage:Element found with locator: .user-image and  locatorType: css
+INFO:LoginPage:Clicked on element with locator: .user-imageand locatorType: css
+INFO:LoginPage:Element found with locator: Logout and  locatorType: link
+INFO:LoginPage:Clicked on element with locator: Logoutand locatorType: link
+INFO:LoginPage:Element found with locator: el1 and  locatorType: id
+INFO:LoginPage:Element Found by locator:el1 and locatorType:id
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:07:46] "POST /automation HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:14:04] "GET /automate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:18:24] "GET /automate HTTP/1.1" 200 -
+INFO:root:Error Occured When getting json :[Errno 2] No such file or directory: '/home/bilalikram/PycharmProjects/untitled/datatestCases.csv'
+INFO:root:************************************************
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:18:34] "POST /automate HTTP/1.1" 400 -
+INFO:root:Error Occured When getting json :Unsupported format, or corrupt file: Expected BOF record; found b'Locator,'
+INFO:root:************************************************
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:19:11] "POST /automate HTTP/1.1" 400 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:19:58] "GET /automate HTTP/1.1" 200 -
+INFO:root:Error Occured When getting json :Unsupported format, or corrupt file: Expected BOF record; found b'Locator,'
+INFO:root:************************************************
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:20:06] "POST /automate HTTP/1.1" 400 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:20:30] "GET /automate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:20:56] "GET /automate HTTP/1.1" 200 -
+INFO:root:Error Occured When getting json :Unsupported format, or corrupt file: Expected BOF record; found b'Locator,'
+INFO:root:************************************************
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:21:04] "POST /automate HTTP/1.1" 400 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:21:43] "GET /automate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:23:02] "GET /automate HTTP/1.1" 200 -
+INFO:LoginPage:Element found with locator: el1 and  locatorType: id
+INFO:LoginPage:Sent data on element with locator: el1 locatorType: id
+INFO:LoginPage:Element found with locator: el4 and  locatorType: id
+INFO:LoginPage:Sent data on element with locator: el4 locatorType: id
+INFO:LoginPage:Element found with locator: [type="submit"] and  locatorType: css
+INFO:LoginPage:Clicked on element with locator: [type="submit"]and locatorType: css
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:23:33] "POST /automate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:27:31] "GET /automate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:35:08] "POST /automate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:35:08] "GET /static/css/bootstrap.min.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:35:08] "GET /static/css/custom.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:35:08] "GET /static/css/font-awesome.min.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:35:08] "GET /static/css/ie10-viewport-bug-workaround.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:35:08] "GET /static/css/app.min.1.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:35:08] "GET /static/js/jquery.min.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:35:08] "GET /static/js/bootstrap.min.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:35:08] "GET /static/js/jquery.flot.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:35:08] "GET /static/js/ie10-viewport-bug-workaround.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:35:08] "GET /static/js/jquery.flot.resize.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:35:08] "GET /static/js/jquery.flot.orderBars.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:35:08] "GET /static/js/bar-chart.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:35:08] "GET /static/js/dynamic-chart.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:35:09] "GET /static/css/bootstrap.min.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:35:09] "GET /static/css/custom.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:35:09] "GET /static/css/font-awesome.min.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:35:09] "GET /static/css/ie10-viewport-bug-workaround.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:35:09] "GET /static/css/app.min.1.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:35:09] "GET /static/js/jquery.min.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:35:09] "GET /static/js/bootstrap.min.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:35:09] "GET /static/js/ie10-viewport-bug-workaround.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:35:09] "GET /static/js/jquery.flot.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:35:09] "GET /static/js/jquery.flot.resize.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:35:09] "GET /static/js/jquery.flot.orderBars.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:35:09] "GET /static/js/bar-chart.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:35:09] "GET /static/js/dynamic-chart.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:35:14] "GET /automate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 17:35:17] "GET /automate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:08:01] "POST /automate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:08:01] "GET /static/css/bootstrap.min.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:08:01] "GET /static/css/custom.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:08:01] "GET /static/css/ie10-viewport-bug-workaround.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:08:01] "GET /static/css/font-awesome.min.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:08:01] "GET /static/css/app.min.1.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:08:01] "GET /static/js/jquery.min.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:08:01] "GET /static/js/bootstrap.min.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:08:01] "GET /static/js/jquery.flot.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:08:01] "GET /static/js/ie10-viewport-bug-workaround.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:08:02] "GET /static/js/jquery.flot.resize.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:08:02] "GET /static/js/bar-chart.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:08:02] "GET /static/js/jquery.flot.orderBars.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:08:02] "GET /static/js/dynamic-chart.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:08:02] "GET /static/css/bootstrap.min.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:08:02] "GET /static/css/custom.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:08:02] "GET /static/css/font-awesome.min.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:08:02] "GET /static/css/ie10-viewport-bug-workaround.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:08:02] "GET /static/css/app.min.1.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:08:02] "GET /static/js/jquery.min.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:08:02] "GET /static/js/bootstrap.min.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:08:02] "GET /static/js/ie10-viewport-bug-workaround.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:08:02] "GET /static/js/jquery.flot.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:08:02] "GET /static/js/jquery.flot.resize.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:08:02] "GET /static/js/jquery.flot.orderBars.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:08:02] "GET /static/js/bar-chart.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:08:02] "GET /static/js/dynamic-chart.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:08:19] "GET /automate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:09:26] "POST /automate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:09:26] "GET /static/css/bootstrap.min.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:09:26] "GET /static/css/custom.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:09:26] "GET /static/css/font-awesome.min.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:09:26] "GET /static/css/ie10-viewport-bug-workaround.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:09:26] "GET /static/css/app.min.1.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:09:26] "GET /static/js/jquery.min.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:09:26] "GET /static/js/bootstrap.min.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:09:26] "GET /static/js/ie10-viewport-bug-workaround.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:09:26] "GET /static/js/jquery.flot.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:09:26] "GET /static/js/jquery.flot.resize.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:09:26] "GET /static/js/jquery.flot.orderBars.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:09:26] "GET /static/js/bar-chart.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:09:26] "GET /static/js/dynamic-chart.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:09:26] "GET /static/css/bootstrap.min.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:09:26] "GET /static/css/font-awesome.min.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:09:26] "GET /static/css/custom.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:09:26] "GET /static/css/ie10-viewport-bug-workaround.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:09:27] "GET /static/css/app.min.1.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:09:27] "GET /static/js/jquery.min.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:09:27] "GET /static/js/bootstrap.min.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:09:27] "GET /static/js/ie10-viewport-bug-workaround.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:09:27] "GET /static/js/jquery.flot.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:09:27] "GET /static/js/jquery.flot.resize.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:09:27] "GET /static/js/jquery.flot.orderBars.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:09:27] "GET /static/js/bar-chart.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:09:27] "GET /static/js/dynamic-chart.js HTTP/1.1" 404 -
+INFO:root:Error Occured When getting json :400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+INFO:root:************************************************
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:10:18] "POST /automation HTTP/1.1" 400 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:10:24] "GET /static/css/bootstrap.min.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:11:05] "GET /automate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:11:13] "POST /automate HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:11:13] "GET /static/css/bootstrap.min.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:11:13] "GET /static/css/ie10-viewport-bug-workaround.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:11:13] "GET /static/css/app.min.1.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:11:13] "GET /static/js/jquery.min.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:11:13] "GET /static/css/custom.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:11:13] "GET /static/css/font-awesome.min.css HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:11:13] "GET /static/js/bootstrap.min.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:11:13] "GET /static/js/ie10-viewport-bug-workaround.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:11:13] "GET /static/js/jquery.flot.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:11:13] "GET /static/js/jquery.flot.resize.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:11:13] "GET /static/js/jquery.flot.orderBars.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:11:13] "GET /static/js/bar-chart.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:11:13] "GET /static/js/dynamic-chart.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:11:13] "GET /static/js/bootstrap.min.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:11:13] "GET /static/js/ie10-viewport-bug-workaround.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:11:13] "GET /static/js/jquery.flot.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:11:13] "GET /static/js/jquery.flot.resize.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:11:13] "GET /static/js/jquery.flot.orderBars.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:11:13] "GET /static/js/bar-chart.js HTTP/1.1" 404 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:11:13] "GET /static/js/dynamic-chart.js HTTP/1.1" 404 -
+INFO:LoginPage:Element found with locator: el1 and  locatorType: id
+INFO:LoginPage:Sent data on element with locator: el1 locatorType: id
+INFO:LoginPage:Element found with locator: el4 and  locatorType: id
+INFO:LoginPage:Sent data on element with locator: el4 locatorType: id
+INFO:LoginPage:Element found with locator: [type="submit"] and  locatorType: css
+INFO:LoginPage:Clicked on element with locator: [type="submit"]and locatorType: css
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:12:09] "POST /automation HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:12:13] "GET /static/js/jquery.flot.resize.js HTTP/1.1" 404 -
+INFO:LoginPage:Element found with locator: el1 and  locatorType: id
+INFO:LoginPage:Sent data on element with locator: el1 locatorType: id
+INFO:LoginPage:Element found with locator: el4 and  locatorType: id
+INFO:LoginPage:Sent data on element with locator: el4 locatorType: id
+INFO:LoginPage:Element found with locator: [type="submit"] and  locatorType: css
+INFO:LoginPage:Clicked on element with locator: [type="submit"]and locatorType: css
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:12:47] "POST /automation HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:13:27] "GET /automate HTTP/1.1" 200 -
+INFO:LoginPage:Element found with locator: el1 and  locatorType: id
+INFO:LoginPage:Sent data on element with locator: el1 locatorType: id
+INFO:LoginPage:Element found with locator: el4 and  locatorType: id
+INFO:LoginPage:Sent data on element with locator: el4 locatorType: id
+INFO:LoginPage:Element found with locator: [type="submit"] and  locatorType: css
+INFO:LoginPage:Clicked on element with locator: [type="submit"]and locatorType: css
+INFO:werkzeug:127.0.0.1 - - [31/Jul/2018 18:14:05] "POST /automate HTTP/1.1" 200 -

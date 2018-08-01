@@ -1,0 +1,5 @@
+Locator,LocatorType,Action,Data
+el1,id,sendKeys,network@cubixlabs.com
+el4,id,sendKeys,admin123
+[type="submit"],css,elementClick,0	
+

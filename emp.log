@@ -1,0 +1,4 @@
+INFO:werkzeug:127.0.0.1 - - [30/Jul/2018 17:33:42] "GET /automate HTTP/1.1" 200 -
+INFO:root:Error Occured When getting json :index.html
+INFO:root:************************************************
+INFO:werkzeug:127.0.0.1 - - [30/Jul/2018 17:33:48] "POST /automate HTTP/1.1" 400 -
