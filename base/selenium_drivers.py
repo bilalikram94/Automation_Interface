@@ -49,11 +49,10 @@ class SeleniumDriver:
             locatorType = locatorType.lower()
             byType = self.getByType(locatorType)
             element = self.driver.find_element(byType, locator)
-            self.log.info("Element found with locator: " + locator +
-                          " and  locatorType: " + locatorType)
+            self.log.info("Element found with locator - " + locator + " - locatorType: " + locatorType)
         except:
-            self.log.info("Element not found with locator: " + locator +
-                          " and  locatorType: " + locatorType)
+            self.log.info("Element not found with locator: " + locator + " -  locatorType: " + locatorType)
+
         return element
 
     def getElementsList(self, locator, locatorType="id"):
@@ -65,9 +64,10 @@ class SeleniumDriver:
             locatorType = locatorType.lower()
             byType = self.getByType(locatorType)
             element = self.driver.find_elements(byType, locator)
-            self.log.info("Element found with: " + locator + "and locatorType: " + locatorType)
+            self.log.info("Element found with - " + locator + " - locatorType: " + locatorType)
+            return True
         except:
-            self.log.error("Element List not found with locator: " + locator + "and locatorType" + locatorType)
+            self.log.error("Element List not found with locator - " + locator + " - locatorType" + locatorType)
             return element
 
     def elementClick(self, locator, locatorType="id", element=None):
@@ -79,22 +79,27 @@ class SeleniumDriver:
             if locator:
                 element = self.getElement(locator, locatorType)
             element.click()
-            self.log.info("Clicked on element with locator: " + locator + "and locatorType: " + locatorType)
+            self.log.info("Clicked on element with locator - " + locator + " - locatorType: " + locatorType)
+            return True
         except:
-            self.log.error("Cannot click on the element with locator: " + locator + " locatorType: " + locatorType)
+            self.log.error("Cannot click on the element with locator - " + locator + " - locatorType: " + locatorType)
             print_stack()
+            return False
+
 
     def sendKeys(self, data, locator, locatorType="id", element=None):
         try:
             if locator:  # this means if the locator is not empty
                 element = self.getElement(locator, locatorType)
             element.send_keys(data)
-            self.log.info("Sent data on element with locator: " + locator +
-                          " locatorType: " + locatorType)
+            self.log.info("Sent data on element with locator - " + locator +
+                          " - locatorType: " + locatorType)
+            return True
         except:
-            self.log.error("Cannot send data on the element with locator: " + locator +
-                           " locatorType: " + locatorType)
+            self.log.error("Cannot send data on the element with locator - " + locator +
+                           " - locatorType: " + locatorType)
             print_stack()
+            return False
 
     def clearField(self, locator, locatorType="id", element=None):
         """
@@ -105,20 +110,22 @@ class SeleniumDriver:
                 element = self.getElement(locator, locatorType)
             if element is not None:
                 element.clear()
-                self.log.info("Text Field cleared by locator: " + locator + "locatorType: " + locatorType)
+                self.log.info("Text Field cleared by locator - " + locator + " - locatorType: " + locatorType)
+                return True
         except:
-            self.log.error("Element not found by locator: " + locator + "locatorType: " + locatorType)
+            self.log.error("Element not found by locator - " + locator + " - locatorType: " + locatorType)
             print_stack()
+            return False
 
     def isElementPresent(self, locator, locatorType="id", element=None):
         try:
             if locator:
                 element = self.getElement(locator, locatorType)
             if element is not None:
-                self.log.info("Element Found by locator:" + locator + " and locatorType:" + locatorType)
+                self.log.info("Element Found by locator - " + locator + " - locatorType:" + locatorType)
                 return True
             else:
-                self.log.info("Element not found by locator" + locator + " and locatorType:" + locatorType)
+                self.log.info("Element not found by locator - " + locator + " - locatorType:" + locatorType)
                 return False
         except:
             print("Element not found")
@@ -149,9 +156,9 @@ class SeleniumDriver:
                                                      ElementNotSelectableException])
             element = wait.until(EC.element_to_be_clickable((byType,
                                                              "stopFilter_stops-0")))
-            self.log.info("Element appeared on the web page:" + locator)
+            self.log.info("Element appeared on the web page - " + locator)
         except:
-            self.log.info("Element not appeared on the web page" + locator)
+            self.log.info("Element not appeared on the web page - " + locator)
             print_stack()
         return element
 
@@ -171,7 +178,7 @@ class SeleniumDriver:
             if not os.path.exists(destinationDirectory):
                 os.makedirs(destinationDirectory)
             self.driver.save_screenshot(destinationFile)
-            self.log.info("Screenshot save to directory: " + destinationFile)
+            self.log.info("Screenshot save to directory - " + destinationFile)
         except:
             self.log.error("### Exception Occurred when taking screenshot")
             print_stack()
@@ -197,13 +204,14 @@ class SeleniumDriver:
                 self.log.info("Getting text on element ::" + info)
                 self.log.info("The Text is ::'" + text + "'")
                 text = text.strip()
+            return True
 
         except:
             self.log.error("###Failed To Get Text On Element !!!" + info)
             print_stack()
             text = None
 
-        return text
+        return text, False
 
     def isElementDisplayed(self, locator="", locatorType="id", element=None):
         """
@@ -217,9 +225,10 @@ class SeleniumDriver:
                 element = element.getElement(locator, locatorType)
             if element is not None:
                 isDisplayed = element.is_displayed()
-                self.log.info("Element is displayed with locator:: " + locator + "and locatorType" + locatorType)
+                self.log.info("Element is displayed with locator - " + locator + " - locatorType" + locatorType)
+                return True
             else:
-                self.log.error("Element not displayed with locator:: " + locator + "and locatorType" + locatorType)
+                self.log.error("Element not displayed with locator - " + locator + " - locatorType" + locatorType)
             return isDisplayed
         except:
             print("Element NOT Found")
@@ -248,11 +257,12 @@ class SeleniumDriver:
                 element = self.getElement(locator, locatorType)
             if element is not None:
                 self.actions.move_to_element(element).perform()
-                self.log.info("Element Found by locator:" + locator + " and locatorType:" + locatorType)
+                self.log.info("Element Found by locator - " + locator + " - locatorType:" + locatorType)
                 return True
         except:
-            self.log.error("Cannot find element with locator: " + locator + " locatorType: " + locatorType)
+            self.log.error("Cannot find element with locator - " + locator + " - locatorType: " + locatorType)
             print_stack()
+            return False
 
     def mouseClick(self, locator, locatorType="id", element=None):
         """
@@ -265,10 +275,10 @@ class SeleniumDriver:
                 element = self.getElement(locator, locatorType)
             if element is not None:
                 self.actions.move_to_element(element).click().perform()
-                self.log.info("Clicked on element with locator: " + locator + "and locatorType: " + locatorType)
+                self.log.info("Clicked on element with locator - " + locator + " - locatorType: " + locatorType)
                 return True
         except:
-            self.log.error("Cannot click on the element with locator: " + locator + " locatorType: " + locatorType)
+            self.log.error("Cannot click on the element with locator - " + locator + " - locatorType: " + locatorType)
             print_stack()
             return False
 
@@ -283,11 +293,11 @@ class SeleniumDriver:
                 element = self.getElement(locator, locatorType)
             if element is not None:
                 self.driver.execute_script("arguments[0].scrollIntoView(true);", element)
-                self.log.info("Element Scrolled into View with locator: " + locator + "locatorType: " + locatorType)
+                self.log.info("Element Scrolled into View with locator - " + locator + " - locatorType: " + locatorType)
                 return True
         except:
             self.log.error(
-                "### Element NOT Scrolled into View with locator: " + locator + "locatorType: " + locatorType)
+                "### Element NOT Scrolled into View with locator - " + locator + " - locatorType: " + locatorType)
             print_stack()
             return False
 
@@ -304,13 +314,13 @@ class SeleniumDriver:
                 fromlocator = self.getElement(fromlocator, fromlocatorType)
                 tolocator = self.getElement(tolocator, tolocatorType)
             self.actions.click_and_hold(fromlocator).move_to_element(tolocator).release().perform()
-            self.log.info("Item dragged from:" + fromlocator + "FromLocator: " + fromlocatorType)
-            self.log.info("Item dragged to:" + tolocator + "ToLocator:" + tolocatorType)
+            self.log.info("Item dragged from - " + fromlocator + " - FromLocator: " + fromlocatorType)
+            self.log.info("Item dragged to - " + tolocator + " - ToLocator:" + tolocatorType)
             return True
 
         except:
-            self.log.error("Element not found with locator: " + fromlocator + "locatorType: " + fromlocatorType)
-            self.log.error("Element not found with locator: " + tolocator + "locatorType: " + tolocatorType)
+            self.log.error("Element not found with locator - " + fromlocator + " - locatorType: " + fromlocatorType)
+            self.log.error("Element not found with locator - " + tolocator + " - locatorType: " + tolocatorType)
             print_stack()
             return False
 
@@ -318,7 +328,7 @@ class SeleniumDriver:
         try:
             height = self.driver.execute_script("return window.innerHeight;")
             width = self.driver.execute_script("return window.innerWidth;")
-            self.log.info("Height of Current Window is: " + height + "Width of Current Window is: " + width)
+            self.log.info("Height of Current Window is - " + height + " - Width of Current Window is: " + width)
             return True
 
         except:
@@ -340,17 +350,17 @@ class SeleniumDriver:
                 element = self.getElement(locator, locatorType)
             if element is not None:
                 sel.select_by_index(val)
-                self.log.info("Element selected from list by Index: " + val)
+                self.log.info("Element selected from list by Index - " + val)
             elif val == "value":
-                self.log.info("Element selected from list by Value: " + val)
+                self.log.info("Element selected from list by Value - " + val)
                 return sel.select_by_value(val)
             else:
                 sel.select_by_visible_text(val)
-                self.log.info("Element selected from list by Visible Text" + val)
+                self.log.info("Element selected from list by Visible Text - " + val)
             return True
 
         except:
-            self.log.error("### Can NOT find Element with locator: " + locator + "locatorType: " + locatorType)
+            self.log.error("### Can NOT find Element with locator - " + locator + " - locatorType: " + locatorType)
             self.log.error("### Can't select value: " + val)
             return False
 
@@ -358,5 +368,7 @@ class SeleniumDriver:
         try:
             self.driver.implicitlyWait(waitAfterCommand)
             self.log.info("Driver waited for:" + waitAfterCommand)
+            return True
         except:
             self.log.error("Could not wait for" + waitAfterCommand)
+            return False

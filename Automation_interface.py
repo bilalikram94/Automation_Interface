@@ -1,13 +1,19 @@
+"""
+Automation Interface Class
+
+Using Flask to Web App
+"""
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 from unittest.mock import inplace
-
+from reportlab.graphics.charts import piecharts
 from flask import Flask, request, render_template
 from base.webdriverfactory import WebDriverFactory
 import json
 import os
 import pandas as pd
 from base.selenium_drivers import SeleniumDriver
+from utilities.util import Util
 from utilities.teststatus import Status
 import utilities.custom_logger as cl
 import logging
@@ -16,6 +22,10 @@ import time
 from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
+
+
+# def makeReport(reportData = {}):
+
 
 
 def createTestSuit(data):
@@ -52,8 +62,6 @@ def createTestSuit(data):
     return test_cases_result
 
 
-
-
 class AutomationInterface(SeleniumDriver):
     log = cl.customLogger(logging.DEBUG)
     element = None
@@ -64,7 +72,9 @@ class AutomationInterface(SeleniumDriver):
     timeOut = None
     driver = None
     stat = None
+    util = None
 
+    reports = {}
 
     def __init__(self, driver):
         try:
@@ -76,8 +86,11 @@ class AutomationInterface(SeleniumDriver):
     def run_All_testCase(self, testCaseJson, baseURL):
 
         wdf = WebDriverFactory(self.driver)
+        if baseURL == '':
+            self.log.error("Base URL not Inserted")
         self.driver = wdf.getWebDriverInstance(baseURL=baseURL)
         self.stat = Status(self.driver)
+        self.util = Util()
 
 
         for test in testCaseJson:
@@ -101,16 +114,18 @@ class AutomationInterface(SeleniumDriver):
             elif self.Action == "isElementPresent":
                 result = self.isElementPresent(self.element, self.elementType)
                 self.stat.markFinal("Test" + self.element, result, "")
+                self.reports.update({test['ActionNo'] : result})
 
 
             elif self.Action == "elementClick":
                 self.elementClick(self.element, self.elementType)
                 time.sleep(self.waitAfterCmd)
 
-            # elif self.Action == "verifyTextContains":
-            #     exceptedText = self.getText(self.element, self.elementType)
-            #     result = self.util.verifyTextContains(self.Data, exceptedText)
-            #     self.stat.markFinal("Test" + self.element, result, "Text Contains")
+            elif self.Action == "verifyTextContains":
+                exceptedText = self.getText(self.element, self.elementType)
+                result = self.util.verifyTextContains(self.Data, exceptedText)
+                self.stat.markFinal("Test" + self.element, result, "Text Contains")
+                self.reports.update({test['ActionNo']: result})
 
             elif self.Action == "sendKeys":
                 self.sendKeys(self.Data, self.element, self.elementType)
@@ -122,6 +137,7 @@ class AutomationInterface(SeleniumDriver):
             elif self.Action == "isElementPresent":
                 result = self.isElementPresent(self.element, self.elementType)
                 self.stat.markFinal("Test" + self.element, result, "")
+                self.reports.update({test['ActionNo']: result})
 
             elif self.Action == "clearField":
                 self.clearField(self.element, self.elementType)
@@ -153,11 +169,16 @@ class AutomationInterface(SeleniumDriver):
 
         self.driver.quit()
 
+    def collectReportsData(self):
+        return self.reports
+
 
 @app.route('/automate', methods=['GET', 'POST'])
 def automate():
     # Logger start here
-    logging.basicConfig(filename='emp.log', level=logging.INFO)
+    # logging.basicConfig(filename='emp.log', level=logging.INFO)
+    from utilities.custom_logger import customLogger as cl
+    log = cl(logging.DEBUG)
     try:
         if request.method == 'POST':
             arResults = []
@@ -189,14 +210,16 @@ def automate():
                 # Bilal's Code
                 obj = AutomationInterface(SeleniumDriver)
                 obj.run_All_testCase(test_cases_result, url)
+                #reportsData = obj.collectReportsData()
+                #makeReport(reportData=reportsData)
 
                 return json.dumps({"response": test_cases_result})
 
 
     except Exception as e:
-        logging.info('Error Occured When getting json :' + str(e))
-        logging.info('************************************************')
-        return json.dumps({"error": 1, "message": "Problem in request method " + str(e)}), 400
+        log.error('### Error Occured When getting json - ' + str(e))
+        log.info('************************************************')
+        return json.dumps({"### Error - ": 1, " - Message - ": " - Problem in request method - " + str(e)}), 400
 
     return '''
          <!doctype html>
@@ -222,7 +245,9 @@ def automate():
 @app.route('/automation', methods=['GET', 'POST'])
 def automation():
     # Logger start here
-    logging.basicConfig(filename='emp.log', level=logging.INFO)
+    # logging.basicConfig(filename='emp.log', level=logging.INFO)
+    from utilities.custom_logger import customLogger
+    log = customLogger(logging.DEBUG)
     try:
         if request.method == 'POST':
             testCase = []
@@ -230,25 +255,40 @@ def automation():
 
             url = str(request.form['url']).strip()
 
-            for term in range(0, int(total / 4)):
+            for term in range(0, int(total / 9)):
                 print(str(term))
-                locator = request.form["locators" + str(term)]
-                data = request.form["data" + str(term)]
-                action = request.form["Actions" + str(term)]
-                locatortype = request.form["LocatorType" + str(term)]
-                testCase.append({str(term): {"Locator": locator, "Action": action, "LocatorType": locatortype,
-                                             "data": data}})
+                ac = request.form["ActionNo" + str(term)]
+                l = request.form["locators" + str(term)]
+                d = request.form["data" + str(term)]
+                a = request.form["Actions" + str(term)]
+                lt = request.form["LocatorType" + str(term)]
+                p = request.form["predecessor" + str(term)]
+                w4c = request.form["waitC" + str(term)]
+                if w4c.strip() == '':
+                    w4c = '3'
+                t_out = request.form["timeout" + str(term)]
+                if t_out.strip() == '':
+                    t_out = '3'
+                wAe = request.form["waitE" + str(term)]
+                if wAe.strip() == '':
+                    wAe = '3'
+                print(ac, l, d, a, lt, p, w4c, t_out, wAe)
+                testCase.append({"FindElement": l, "ActionCommand": a, "FindElementType": lt, "ActionParameters": d,
+                                 "Predecessor": p, "Wait-For-Element": wAe, "WaitAfterCommand": w4c,
+                                 "Wait-Timeout": t_out, "ActionNo": ac})
 
             # Bilal's Code
-            obj = AutomationInterface(BasePage)
+            obj = AutomationInterface(SeleniumDriver)
             obj.run_All_testCase(testCase, baseURL=url)
 
             return json.dumps({"response": testCase})
 
     except Exception as e:
-        logging.info('Error Occured When getting json :' + str(e))
-        logging.info('************************************************')
-        return json.dumps({"error": 1, "message": "Problem in request method " + str(e)}), 400
+        log.error('### Error Occurred When getting json :' + str(e))
+        log.info('************************************************')
+        return json.dumps({"### Error - ": 1, " - Message - ": " - Problem in request method - " + str(e)}), 400
+
+
 
 
 if __name__ == '__main__':

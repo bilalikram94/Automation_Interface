@@ -1,0 +1,40 @@
+08/02/2018 04:36:26 PM - AutomationInterface - INFO: Element found with - locator: el4 - locatorType: id
+08/02/2018 04:36:26 PM - AutomationInterface - INFO: Sent data on element with - locator: el4 locatorType: id
+08/02/2018 04:36:29 PM - AutomationInterface - INFO: Element found with locator: el1 and  locatorType: id
+08/02/2018 04:36:29 PM - AutomationInterface - INFO: Sent data on element with locator: el1 locatorType: id
+08/02/2018 04:36:35 PM - AutomationInterface - INFO: Element not found with locator: [type="submit"] and  locatorType: id
+08/02/2018 04:36:35 PM - AutomationInterface - ERROR: Cannot click on the element with locator: [type="submit"] locatorType: id
+08/02/2018 07:46:00 PM - AutomationInterface - INFO: Element found with locator - el1 - locatorType: id
+08/02/2018 07:46:01 PM - AutomationInterface - INFO: Sent data on element with locator - el1 - locatorType: id
+08/02/2018 07:46:03 PM - AutomationInterface - INFO: Element found with locator - el4 - locatorType: id
+08/02/2018 07:46:03 PM - AutomationInterface - INFO: Sent data on element with locator - el4 - locatorType: id
+08/02/2018 07:46:05 PM - AutomationInterface - INFO: Element found with locator - [type="submit"] - locatorType: css
+08/02/2018 07:46:22 PM - AutomationInterface - INFO: Clicked on element with locator - [type="submit"] - locatorType: css
+08/02/2018 07:46:24 PM - AutomationInterface - INFO: Element found with locator - //ul[@id='cd-primary-nav']/li[1] - locatorType: xpath
+08/02/2018 07:46:24 PM - AutomationInterface - INFO: Clicked on element with locator - //ul[@id='cd-primary-nav']/li[1] - locatorType: xpath
+08/02/2018 07:46:28 PM - AutomationInterface - INFO: Element found with locator - Attendance - locatorType: link
+08/02/2018 07:46:28 PM - AutomationInterface - INFO: Element Found by locator - Attendance - locatorType:link
+08/02/2018 07:46:28 PM - Status - INFO: ### VERIFICATION SUCCESSFUL :: + 
+08/02/2018 07:46:28 PM - Status - INFO: TestAttendance ### TEST SUCCESSFUL
+08/02/2018 07:46:28 PM - AutomationInterface - INFO: Element found with locator - Employees - locatorType: link
+08/02/2018 07:46:28 PM - AutomationInterface - INFO: Element Found by locator - Employees - locatorType:link
+08/02/2018 07:46:28 PM - Status - INFO: ### VERIFICATION SUCCESSFUL :: + 
+08/02/2018 07:46:28 PM - Status - INFO: TestEmployees ### TEST SUCCESSFUL
+08/02/2018 07:46:28 PM - AutomationInterface - INFO: Element found with locator - Support Tickets - locatorType: link
+08/02/2018 07:46:28 PM - AutomationInterface - INFO: Element Found by locator - Support Tickets - locatorType:link
+08/02/2018 07:46:28 PM - Status - INFO: ### VERIFICATION SUCCESSFUL :: + 
+08/02/2018 07:46:28 PM - Status - INFO: TestSupport Tickets ### TEST SUCCESSFUL
+08/02/2018 07:46:28 PM - AutomationInterface - INFO: Element found with locator - Time Off - locatorType: link
+08/02/2018 07:46:28 PM - AutomationInterface - INFO: Element Found by locator - Time Off - locatorType:link
+08/02/2018 07:46:28 PM - Status - INFO: ### VERIFICATION SUCCESSFUL :: + 
+08/02/2018 07:46:28 PM - Status - INFO: TestTime Off ### TEST SUCCESSFUL
+08/02/2018 07:46:28 PM - AutomationInterface - INFO: Element found with locator - Training - locatorType: link
+08/02/2018 07:46:28 PM - AutomationInterface - INFO: Element Found by locator - Training - locatorType:link
+08/02/2018 07:46:28 PM - Status - INFO: ### VERIFICATION SUCCESSFUL :: + 
+08/02/2018 07:46:28 PM - Status - INFO: TestTraining ### TEST SUCCESSFUL
+08/02/2018 07:46:28 PM - AutomationInterface - INFO: Element found with locator - //ul[@id='cd-primary-nav']/li[1] - locatorType: xpath
+08/02/2018 07:46:28 PM - AutomationInterface - INFO: Clicked on element with locator - //ul[@id='cd-primary-nav']/li[1] - locatorType: xpath
+08/02/2018 07:46:33 PM - AutomationInterface - INFO: Element not found with locator: Logout -  locatorType: link
+08/02/2018 07:46:33 PM - AutomationInterface - ERROR: Cannot click on the element with locator - Logout - locatorType: link
+08/02/2018 07:46:35 PM - AutomationInterface - INFO: Element found with locator - .user-image - locatorType: css
+08/02/2018 07:46:35 PM - AutomationInterface - INFO: Clicked on element with locator - .user-image - locatorType: css

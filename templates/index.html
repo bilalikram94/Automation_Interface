@@ -22,25 +22,28 @@
     </head>
 
 	<body>
-    <div class="container">
-        <div class="col-sm-4">
-            <div class="card">
-                <div class="card-body">
-                    <form method=post enctype=multipart/form-data action="automation">
-                                <p>Enter Page Url to Test <input type="text", name="url"></p>
+		<div class="container">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <form method=post enctype=multipart/form-data action="automation">
+                                <p>Enter Page Url to Test <input type="text", name="url" placeholder="Enter Url Here" required></p>
                              {% for out in item %}
-                            <p>Locator<input type="text" name="locators{{out}}">&nbsp;&nbsp;&nbsp;Locator Type
-                                <select name='LocatorType{{out}}'>
+                                <p>ActionNo<input type="text" value="{{out}}" name="ActionNo{{out}}" style="width:10px;">Predecessor<input type="text" name="predecessor{{out}}" style="width:30px;">
+                                    Locator<input type="text" name="locators{{out}}" style="width:40px;" required>
+                                    Locator Type
+                                <select name='LocatorType{{out}}' style="width:50px;">
                                     <option value='id' >id</option>
-                                    <option value='xpath'>xPtah</option>
-                                    <option value='css'>CSS</option>
-                                    <option value='link'>Link Text</option>
-                                    <option value='class'>Class Name</option>
+                                    <option value='xPath'>xPtah</option>
+                                    <option value='CSS'>CSS</option>
+                                    <option value='Link_Text'>Link Text</option>
+                                    <option value='partial_link'>Partial Link</option>
                                 </select>
                             Actions
-                                <select name='Actions{{out}}'>
+                                <select name='Actions{{out}}' style="width:50px;">
                                     <option value='getTitle' >getTitle</option>
-                                    <option value='login'>Login</option>
+                                    <option value='getByType'>getByType</option>
+                                    <option value='getElement'>getElement</option>
                                     <option value='getElementsList'>getElementsList</option>
                                     <option value='sendKeys'>sendKeys</option>
                                     <option value='clearField'>clearField</option>
@@ -48,23 +51,29 @@
                                     <option value='isElementPresent'>isElementPresent</option>
                                     <option value='elementPresenceCheck'>elementPresenceCheck</option>
                                     <option value='waitForElement'>waitForElement</option>
+                                    <option value='screenShot'>screenShot</option>
+                                    <option value='getText'>getText</option>
                                     <option value='isElementDisplayed'>isElementDisplayed</option>
                                     <option value='webScroll'>webScroll</option>
                                     <option value='mouseHover'>mouseHover</option>
                                     <option value='mouseClick'>mouseClick</option>
                                     <option value='scrollIntoView'>scrollIntoView</option>
                                     <option value='dragDrop'>dragDrop</option>
+                                    <option value='dragDrop'>dragDrop</option>
                                     <option value='windowSize'>windowSize</option>
                                     <option value='dropDownList'>dropDownList</option>
                                 </select>
-                            Data <input type=text name='data{{out}}'>
+                            Data <input type=text name='data{{out}}' style="width:50px;">
+                            Wait4Element <input type=text name='waitE{{out}}' style="width:30px;">
+                            WaitAfterCMD <input type=text name='waitC{{out}}' style="width:30px;">
+                            Time Out <input type=text name='timeout{{out}}' style="width:30px;">
                             {% endfor %}
-                                <p align="center"><input type=submit value="Automate">
-                    </form>
+                                <p align="center"><input type=submit value="Do Automation">
+                            </form>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
+		</div>
 
 	<!-- Bootstrap & JavaScript -->
 	<!-- Placed at the end of the document so the pages load faster -->
