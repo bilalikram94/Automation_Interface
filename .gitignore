@@ -1,0 +1,7 @@
+
+*.log
+*.pyc
+*.iml
+*.xml
+*.md
+.pytest_cache/v/cache/nodeids

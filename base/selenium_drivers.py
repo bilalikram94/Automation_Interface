@@ -173,12 +173,15 @@ class SeleniumDriver:
         destinationFile = os.path.join(currentDirectory, relativeFileName)
         destinationDirectory = os.path.join(currentDirectory, screenshotDirectory)
 
+        allure_directory = destinationDirectory + "/" + fileName
+
         # noinspection PyBroadException
         try:
             if not os.path.exists(destinationDirectory):
                 os.makedirs(destinationDirectory)
             self.driver.save_screenshot(destinationFile)
             self.log.info("Screenshot save to directory - " + destinationFile)
+            return allure_directory
         except:
             self.log.error("### Exception Occurred when taking screenshot")
             print_stack()

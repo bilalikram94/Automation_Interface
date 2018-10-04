@@ -10,6 +10,7 @@ Example:
 import utilities.custom_logger as cl
 import logging
 from base.selenium_drivers import SeleniumDriver
+import allure
 from traceback import print_stack
 
 
@@ -35,15 +36,18 @@ class Status(SeleniumDriver):
                 else:
                     self.resultList.append("FAIL")
                     self.log.error("### VERIFICATION FAILED :: + " + resultMessage)
-                    self.screenShot(resultMessage)
+                    res = self.screenShot(resultMessage)
+                    allure.attach.file(res, resultMessage, attachment_type=allure.attachment_type.PNG)
             else:
                 self.resultList.append("FAIL")
                 self.log.error("### VERIFICATION FAILED :: + " + resultMessage)
-                self.screenShot(resultMessage)
+                res = self.screenShot(resultMessage)
+                allure.attach.file(res, resultMessage, attachment_type=allure.attachment_type.PNG)
         except:
             self.resultList.append("FAIL")
             self.log.error("### Exception Occurred !!!")
-            self.screenShot(resultMessage)
+            res = self.screenShot(resultMessage)
+            allure.attach.file(res, resultMessage, attachment_type=allure.attachment_type.PNG)
             print_stack()
 
     def mark(self, result, resultMessage):

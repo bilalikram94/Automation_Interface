@@ -3,9 +3,11 @@ Automation Interface Class
 
 Using Flask to Web App
 """
-#!/usr/bin/python
+# !/usr/bin/python
 # -*- coding: utf-8 -*-
 from unittest.mock import inplace
+
+from jinja2 import debug
 from reportlab.graphics.charts import piecharts
 from flask import Flask, request, render_template
 from base.webdriverfactory import WebDriverFactory
@@ -25,7 +27,6 @@ app = Flask(__name__)
 
 
 # def makeReport(reportData = {}):
-
 
 
 def createTestSuit(data):
@@ -92,7 +93,6 @@ class AutomationInterface(SeleniumDriver):
         self.stat = Status(self.driver)
         self.util = Util()
 
-
         for test in testCaseJson:
             self.element = test['FindElement']
             self.Action = test['ActionCommand']
@@ -114,7 +114,7 @@ class AutomationInterface(SeleniumDriver):
             elif self.Action == "isElementPresent":
                 result = self.isElementPresent(self.element, self.elementType)
                 self.stat.markFinal("Test" + self.element, result, "")
-                self.reports.update({test['ActionNo'] : result})
+                self.reports.update({test['ActionNo']: result})
 
 
             elif self.Action == "elementClick":
@@ -194,14 +194,14 @@ def automate():
 
                 files = request.files['file']
                 filename = secure_filename(files.filename)
-                files.save("/home/bilalikram/PycharmProjects/Automation_Interface/data/" + filename)
+                files.save("D:\Github\Automation_Interface\data" + filename)
 
                 if filename.split(".")[-1] in ["xls", "xlsx"]:
-                    dataFrame = pd.read_excel(os.path.join("/home/bilalikram/PycharmProjects/Automation_Interface/data/"
+                    dataFrame = pd.read_excel(os.path.join("D:\Github\Automation_Interface\data"
                                                            + filename))
                     test_cases_result = createTestSuit(dataFrame)
                 elif filename.split(".")[-1] in ["csv"]:
-                    dataFrame = pd.read_csv(os.path.join("/home/bilalikram/PycharmProjects/Automation_Interface/data/"
+                    dataFrame = pd.read_csv(os.path.join("D:\Github\Automation_Interface\data"
                                                          + filename))
                     test_cases_result = createTestSuit(dataFrame)
                 else:
@@ -210,8 +210,8 @@ def automate():
                 # Bilal's Code
                 obj = AutomationInterface(SeleniumDriver)
                 obj.run_All_testCase(test_cases_result, url)
-                #reportsData = obj.collectReportsData()
-                #makeReport(reportData=reportsData)
+                # reportsData = obj.collectReportsData()
+                # makeReport(reportData=reportsData)
 
                 return json.dumps({"response": test_cases_result})
 
@@ -250,6 +250,8 @@ def automation():
     log = customLogger(logging.DEBUG)
     try:
         if request.method == 'POST':
+            os.system("pytest Automation_interface.py --alluredir D:\\Github\\Automation_Interface\\reports\\"
+                      "allure-results")
             testCase = []
             total = len(request.form)
 
@@ -258,7 +260,7 @@ def automation():
             for term in range(0, int(total / 9)):
                 print(str(term))
                 ac = request.form["ActionNo" + str(term)]
-                l = request.form["locators" + str(term)]
+                lo = request.form["locators" + str(term)]
                 d = request.form["data" + str(term)]
                 a = request.form["Actions" + str(term)]
                 lt = request.form["LocatorType" + str(term)]
@@ -272,8 +274,8 @@ def automation():
                 wAe = request.form["waitE" + str(term)]
                 if wAe.strip() == '':
                     wAe = '3'
-                print(ac, l, d, a, lt, p, w4c, t_out, wAe)
-                testCase.append({"FindElement": l, "ActionCommand": a, "FindElementType": lt, "ActionParameters": d,
+                print(ac, lo, d, a, lt, p, w4c, t_out, wAe)
+                testCase.append({"FindElement": lo, "ActionCommand": a, "FindElementType": lt, "ActionParameters": d,
                                  "Predecessor": p, "Wait-For-Element": wAe, "WaitAfterCommand": w4c,
                                  "Wait-Timeout": t_out, "ActionNo": ac})
 
@@ -289,7 +291,5 @@ def automation():
         return json.dumps({"### Error - ": 1, " - Message - ": " - Problem in request method - " + str(e)}), 400
 
 
-
-
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=9000, threaded=True)
+    app.run(port=9000, debug='INFO', threaded=True)

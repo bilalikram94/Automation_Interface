@@ -41,6 +41,7 @@ class BasePage(SeleniumDriver):
         try:
             actualTitle = self.getTitle()
             return self.util.verifyTextContains(actualTitle, titleToVerify)
+
         except:
             self.log.error("### Failed to get page title !!!")
             print_stack()
